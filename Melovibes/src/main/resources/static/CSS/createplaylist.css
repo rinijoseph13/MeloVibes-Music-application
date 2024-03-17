@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+body {
+  background-color: black; /* Set background color to black */
+  color: white; /* Set text color to white */
+  font-family: Arial, sans-serif; /* Set font family */
+  margin: 0; /* Reset default margin */
+  padding: 0; /* Reset default padding */
+}
+
+h1 {
+  color: #85084b;
+  text-align: center;
+  font-style: italic;
+}
+
+
+
+form {
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* White shadow */
+  margin-left: 120px; /* Adjust margin to accommodate sidebar width */
+}
+
+input[type="submit"] {
+  background-color: #c71585; /* Dark pink color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #ff69b4; /* Light pink color on hover */
+}
+
+input[type="checkbox"] {
+  background-color: #ff69b4; /* Pink color */
+}
+
+input[type="checkbox"]:checked:before {
+  content: "\2713"; /* Unicode character for checkmark */
+  display: inline-block;
+  font-size: 14px;
+  color: white; /* White checkmark color */
+}
+
+label {
+  color: white;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 80px; /* Reduced size of sidebar */
+  background-color: #222;
+  padding: 20px;
+  z-index: 1;
+}
+
+.admin-choices {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Audiowide", sans-serif;
+}
+
+.button {
+  margin-left: 10px;
+  text-decoration: none;
+  color: #fff;
+  background-color:  #a50a5b; /* Change button color to dark pink */
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: #85084b; /* Change hover color to a darker shade of pink */
+}

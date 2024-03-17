@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+/* Resetting default margin and padding */
+body, form, label, input {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #85084b;
+  text-align: center;
+  font-style: italic;
+}
+
+
+/* Body styles */
+body {
+  background-color: black; /* Set background color to black */
+  color: white; /* Set text color to white */
+  font-family: Arial, sans-serif; /* Set font family */
+}
+
+/* Form container styles */
+form {
+  max-width: 400px; /* Set max width for the form */
+  margin: 50px auto; /* Center align the form */
+  padding: 20px; /* Add padding */
+}
+
+/* Label styles */
+label {
+  display: block; /* Display labels as block elements */
+  font-weight: bold; /* Set font weight to bold */
+  margin-bottom: 5px; /* Add bottom margin */
+  color: white; /* Set text color to white */
+}
+
+/* Input styles */
+input[type="text"] {
+  width: calc(100% - 20px); /* Set input width */
+  padding: 10px; /* Add padding */
+  margin-bottom: 20px; /* Add bottom margin */
+  border: 1px solid white; /* Set border color to white */
+  border-radius: 5px; /* Add border radius */
+  background-color: white; /* Set background color to black */
+  color:  black; /* Set text color to white */
+}
+
+/* Submit button styles */
+input[type="submit"] {
+  width: 100%; /* Set button width to fill the container */
+  padding: 10px; /* Add padding */
+  background-color: #a50a5b; /* Set button background color to dark pink */
+  color: white; /* Set button text color to white */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Add border radius */
+  cursor: pointer; /* Add cursor pointer */
+}
+
+/* Submit button hover styles */
+input[type="submit"]:hover {
+  background-color: #85084b; /* Change hover color to a darker shade of pink */
+}
+
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 120px;
+  background-color: #222;
+  padding: 20px;
+  z-index: 1;
+}
+
+.admin-choices {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Audiowide", sans-serif;
+}
+.button {
+  margin-left: 10px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #a50a5b; /* Change button color to dark pink */
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: #85084b; /* Change hover color to a darker shade of pink */
+}
+
+

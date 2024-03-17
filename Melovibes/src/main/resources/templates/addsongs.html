@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Add Songs Page</title>
+<link rel="stylesheet" type="text/css" href="CSS/addsongs.css">
+</head>
+<body>
+<h1>Enrich the Collection: Add a New Track</h1>
+<form action="/addsongs" method="post">
+  <label>Song Name</label>
+  <input type="text" name="name" required="required">
+  <br>
+  <label>Song Genre</label>
+  <input type="text" name="genre" required="required">
+  <br>
+  <label>Song Image</label>
+  <input type="text" name="image" required="required">
+  <br>
+  <label>Song Link</label>
+  <input type="text" name="link" required="required">
+  <br>
+  <input type="submit" value="ADD SONGS" class="submit-button">
+  <br><br>
+</form>
+
+<section id="Sidebar-section">
+    <div class="sidebar">
+        <div class="admin-choices">
+                     <a href="/map-viewsongs" class="button">VIEW SONGS</a>
+                     
+            
+           
+        </div>
+    </div>
+</section>
+
+
+</body>
+</html>

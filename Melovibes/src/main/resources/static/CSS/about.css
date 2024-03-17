@@ -1,0 +1,80 @@
+@charset "UTF-8";
+/* Resetting default margin and padding */
+body, h1, p, form {
+  margin: 0;
+  padding: 0;
+   /* Setting default text color to white for visibility */
+}
+body {
+  background-color: black; /* Set background color to black */
+  color: white; /* Set text color to white */
+  font-family: Arial, sans-serif; /* Set font family */
+}
+
+/* Container styling */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #000; /* Change background color to black without transparency */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+}
+
+/* Header styles */
+h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+/* Paragraph styles */
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Form styles */
+form {
+  margin-top: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+textarea {
+  width: 70%;
+  height: 100px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #fff; /* Set border color to white */
+  border-radius: 5px;
+  color: #000; /* Set text color to black for better visibility */
+}
+
+input[type="submit"] {
+  background-color: #a50a5b; /* Change button color to dark pink */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #85084b; /* Change hover color to a darker shade of pink */
+}
+
+/* Footer styles */
+.footer {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Background image */
+body {
+  background-image: url('background.jpg'); /* Add your background image URL */
+  background-size: cover;
+  background-position: center;
+}

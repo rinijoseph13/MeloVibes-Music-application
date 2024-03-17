@@ -1,0 +1,31 @@
+@charset "UTF-8";
+/* styles.css */
+
+body {
+    background-color: black;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.buy-button {
+    display: inline-block;
+    background-color:  #a50a5b;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.buy-button:hover {
+    background-color:  #85084b; /* Darker shade of pink on hover */
+}
+
+h1 {
+    color: white;
+}

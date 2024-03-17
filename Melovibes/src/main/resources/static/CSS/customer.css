@@ -1,0 +1,39 @@
+@charset "UTF-8";
+@charset "UTF-8";
+/* Resetting default margin and padding */
+body, h1, a {
+  margin: 0;
+  padding: 0;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif; /* Set a fallback font family */
+  background-color: black; /* Set background color */
+  text-align: center; /* Center align text */
+  padding-top: 50px; /* Add some top padding */
+}
+
+/* Header styles */
+h2 {
+  font-size: 20px; /* Increase font size */
+  margin-bottom: 20px; /* Add some bottom margin */
+  color: #fff;
+   font-style: italic;
+   /* Set text color to white */
+}
+
+/* Link styles */
+a.button {
+  text-decoration: none; /* Remove underline */
+  color: #fff; /* Set text color to white */
+  background-color:   #a50a5b; /* Set button background color to pink */
+  padding: 10px 20px; /* Add padding */
+  border-radius: 5px; /* Add border radius for rounded corners */
+  margin: 5px; /* Add margin */
+  display: inline-block; /* Make it behave like a block element */
+}
+
+a.button:hover {
+  background-color:  #85084b; /* Set hover background color to a darker shade of pink */
+}

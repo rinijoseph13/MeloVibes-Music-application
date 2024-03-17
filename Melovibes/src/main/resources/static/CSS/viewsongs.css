@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+/* Global styles */
+body {
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #85084b;
+    text-align: center;
+    font-style: italic;
+}
+
+/* Sidebar styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 80px;
+    background-color: #222;
+    padding: 20px;
+    z-index: 1;
+}
+
+.admin-choices {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Audiowide", sans-serif;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjusted minimum width */
+    gap: 20px;
+    margin-left: 120px; /* Adjusted margin to create space between the sidebar and the grid */
+    margin-top: 70px; /* Adjusted margin to move the grid container higher */
+    background-color: black; /* Changed background color to black */
+    border-radius: 5px;
+    font-family: "Audiowide", sans-serif;
+    color: aliceblue;
+    align-items: stretch;
+}
+
+.song-card {
+	background-color: #272626;
+	border: 1px solid #85084b;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	padding: 10px;
+	margin-top: 20px;
+}
+.song-card img {
+	width: 100%;
+	height: 180px;
+	object-fit: cover;
+	border-bottom: 1px solid #ddd;
+}
+.song-card .info {
+	text-align: center;
+	padding: 10px;
+	color: aliceblue;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+.audio-container {
+    text-align: center; /* Center align the audio element */
+}
+audio {
+    max-width: 100%; /* Reduce the size of the audio element */
+}
+
+/* Add hover effect on song cards */
+.song-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+} 
+
+
+/* Button styles */
+.button {
+    margin-left: 10px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #a50a5b;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #85084b;
+}
+
+/* Search Bar styles */
+#searchForm {
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#searchInput {
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+#searchForm button {
+    background-color: #85084b;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#searchForm button:hover {
+    background-color: #6e063a;
+}

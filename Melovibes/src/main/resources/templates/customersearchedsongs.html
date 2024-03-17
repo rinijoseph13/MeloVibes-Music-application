@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Searched Songs</title>
+<link rel="stylesheet" type="text/css" href="CSS/searchedsongs.css">
+</head>
+<body>
+<h1>Searched Songs</h1>
+<form id="searchForm" action="/searchbar" method="GET">
+    <input type="text" id="searchInput" name="keyword" placeholder="Search songs...">
+    <button type="submit">Search</button>
+</form>
+
+<br><br>
+
+<section id="Grid-Section">
+    <div class="grid-container">
+        <!-- Display searched songs if available -->
+        <div th:if="${searchedSongs != null}">
+            <div class="song-card" th:each="song : ${searchedSongs}">
+                <div class="image">
+                    <img th:src="@{'/Images/' + ${song.image} + '.jpeg'}" alt="Song Image">
+                </div>
+                <div class="info">    
+                    <h3 th:text="${song.name}">Song Title</h3>
+                    <span th:text="${song.genre}">Genre</span>
+                    <br>
+                </div>
+                <div class="audio-container">
+                    <audio controls="controls">
+                        <source th:src="${song.link}" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="Sidebar-section">
+    <div class="sidebar">
+        <div class="admin-choices">
+            <a href="/viewsongs" class="button">SONG LIST</a> 
+        </div>
+    </div>
+</section>
+</body>
+</html>

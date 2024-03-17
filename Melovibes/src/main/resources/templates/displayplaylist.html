@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="CSS/displayplaylist.css">
+</head>
+<body>
+<h1>PlayLists</h1>
+<form id="searchForm" action="/search-playlist" method="GET">
+    <input type="text" id="searchInput" name="keyword" placeholder="Search playlists...">
+    <button type="submit">Search</button>
+</form>
+<br><br>
+<section id="Grid-Section">
+    <div class="grid-container">
+        <div class="song-card" th:each="plist : ${plist}">
+            <div class="info">    
+                <h3 th:text="${plist.id}">PlayList ID</h3>
+                <span th:text="${plist.name}">PlayList Name</span>
+                <br>
+                <h3>Songs</h3>
+                <div class="audio-container" th:each="s : ${plist.songs}">
+                    <span th:text="${s.name}"></span><br>
+                    <audio controls="controls">
+                        <source th:src="${s.link}" type="audio/mpeg">
+                    </audio>
+                    <br>
+                </div>
+            </div>
+            <br>
+            <!-- Delete button -->
+            <form th:action="@{/delete-playlist}" method="post">
+                <input type="hidden" th:name="id" th:value="${plist.id}">
+                <div class="button-container">
+                    <button type="submit" id="delete-button">Delete</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<section id="Sidebar-section">
+    <div class="sidebar">
+        <div class="admin-choices">
+        
+            <a href="/viewsongs"  class="button">VIEW SONGS</a>
+            <br>
+            <a href="/createplaylist" class="button">CREATE PLAYLIST</a>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <a href="/logout" id="buttons" class="button" >Logout</a>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>

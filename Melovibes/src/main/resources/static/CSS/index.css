@@ -1,0 +1,57 @@
+@charset "UTF-8";
+body {
+  background-color: black; /* Change background color to black */
+  background-size: cover;
+  background-position: center;
+  color: #fff; /* Set default text color to white */
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+#logo {
+  font-size: 24px; /* Adjusted font size for a smaller logo */
+  font-weight: bold;
+  text-decoration: none;
+  background: linear-gradient(to right, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #9400d3); /* Rainbow gradient */
+  -webkit-background-clip: text; /* Clip text to background */
+  -webkit-text-fill-color: transparent; /* Transparent text */
+}
+
+
+
+#buttons {
+  display: flex;
+}
+
+.button {
+  margin-left: 10px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #a50a5b; /* Change button color to dark pink */
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: #85084b; /* Change hover color to a darker shade of pink */
+}
+
+.container {
+  text-align: center;
+  margin-top: 50px; /* Adjust as needed */
+}
+
+#welcome-text {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.caption {
+  font-style: italic;
+  color: #ccc; /* Adjust caption color for visibility */
+}

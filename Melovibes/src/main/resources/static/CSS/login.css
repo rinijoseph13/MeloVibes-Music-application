@@ -1,0 +1,60 @@
+@charset "UTF-8";
+/* Resetting default margin and padding */
+body, form, label, input {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black; /* Set background color to black */
+  color: white; /* Set text color to white */
+  font-family: Arial, sans-serif; /* Set font family */
+}
+
+h1 {
+    color: #85084b;
+    text-align: center;
+    font-style: italic;
+}
+/* Container styling */
+form {
+  max-width: 300px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: black; /* Change background color to black */
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #fff; /* Ensure text is white for visibility */
+}
+
+/* Label styles */
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Input styles */
+input[type="email"],
+input[type="password"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Submit button styles */
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #a50a5b; /* Change button color to dark pink */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #85084b; /* Change hover color to a darker shade of pink */
+}

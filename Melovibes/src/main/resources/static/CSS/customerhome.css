@@ -1,0 +1,28 @@
+
+@charset "UTF-8";
+/* styles.css */
+
+/* styles.css */
+
+body {
+    background-color: black;
+    color: white; /* Change text color to white for better readability */
+    text-align: center; /* Center align the text */
+}
+
+.button {
+    display: inline-block;
+    background-color: #a50a5b; /* Change background color to dark pink */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #85084b; /* Keep the hover color as it is */
+}
+
+h1 {
+    color: white; /* Change heading color to white */
+}
